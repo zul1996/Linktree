@@ -7,8 +7,8 @@ import { FaInstagram } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className=" bg-primary   flex items-center justify-center h-screen">
-      <div className=" absolute  top-[2%] lg:top-[11%]  z-10 ">
+    <main className=" bg-primary flex items-center justify-center h-screen">
+      <div className=" absolute   top-[2%] lg:top-[11%]  z-10 ">
         <Image
           src="/Monsters.svg"
           alt="phone"
@@ -17,23 +17,26 @@ export default function Home() {
           className="rounded-full"
         />
       </div>
-      <div className="z-20 bg-background border-solid border-primary-foreground border-4 p-10 rounded-lg lg:flex lg:flex-row  lg:items-center lg:justify-between lg:gap-28  ">
+      <div className="z-20 bg-background border-solid border-primary-foreground border-4 p-4 rounded-lg lg:flex lg:flex-row  lg:items-center lg:justify-between lg:gap-28  ">
         <div className="flex flex-col items-center">
-          <Image
-            src="/profile.jpeg"
-            alt="phone"
-            width={200}
-            height={300}
-            className="rounded-full"
-          />
+          <div className="">
+            <Image
+              src="/profile.jpeg"
+              alt="phone"
+              objectFit="cover"
+              width={300}
+              height={400}
+              className="rounded-full size-28"
+            />
+          </div>
 
-          <h2 className="mt-5 text-2xl font-bold ">
+          <h2 className="mt-5 text-l font-bold md:text-xl">
             Muhammad Zulkarnaen Indranto
           </h2>
           <h2 className="mt-1 text-slate-400"> Full stack Developer</h2>
         </div>
-        <div className="flex flex-col items-center">
-          <div className="mt-5 gap-8 flex flex-col">
+        <div className="flex flex-col items-center justify-center">
+          <div className="mt-5 gap-8 flex flex-col items-center">
             <div className="">
               <Link
                 href="/cv.pdf"
@@ -42,7 +45,10 @@ export default function Home() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Button className=" w-[400px]" variant={"default"}>
+                <Button
+                  className=" w-[200px] md:w-[300px] "
+                  variant={"default"}
+                >
                   cv
                 </Button>
               </Link>
@@ -54,7 +60,11 @@ export default function Home() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Button className="w-[400px] " size={"lg"} variant={"default"}>
+                <Button
+                  className="w-[200px] md:w-[300px] "
+                  size={"lg"}
+                  variant={"default"}
+                >
                   Email
                 </Button>
               </Link>
@@ -66,7 +76,7 @@ export default function Home() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Button className="w-[400px]" variant={"default"}>
+              <Button className="w-[200px] md:w-[300px]" variant={"default"}>
                 Whatsapp
               </Button>
             </Link>
