@@ -2,7 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import { CiLinkedin, CiTwitter } from "react-icons/ci";
+import { CiLinkedin, CiTwitter, CiYoutube } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 
 export default function Home() {
@@ -55,7 +55,7 @@ export default function Home() {
             </div>
             <div>
               <Link
-                href="https://stackoverflow.com/"
+                href="mailto:mzulnewbie@gmail.com"
                 passHref={true}
                 rel="noopener noreferrer"
                 target="_blank"
@@ -71,7 +71,7 @@ export default function Home() {
             </div>
 
             <Link
-              href="https://stackoverflow.com/"
+              href="https://wa.me/6281937186854?text=Hey%20Zoel%20Salam%20Kenal"
               passHref={true}
               rel="noopener noreferrer"
               target="_blank"
@@ -105,6 +105,14 @@ export default function Home() {
               target="_blank"
             >
               <CiTwitter className="size-8" />
+            </Link>
+            <Link
+              href="https://www.youtube.com/channel/UCwLr4n2CPBi-oJsy9Gnv05w"
+              passHref={true}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <CiYoutube className="size-8" />
             </Link>
           </div>
         </div>
