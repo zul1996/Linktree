@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { CiLinkedin, CiTwitter } from "react-icons/ci";
-import { FaInstagram } from "react-icons/fa";
+import { FaGithub, FaInstagram } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -105,6 +105,14 @@ export default function Home() {
               target="_blank"
             >
               <CiTwitter className="size-8" />
+            </Link>
+            <Link
+              href="https://github.com/zul1996"
+              passHref={true}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <FaGithub className="size-8" />
             </Link>
           </div>
         </div>
