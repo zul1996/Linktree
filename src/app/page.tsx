@@ -35,13 +35,13 @@ interface LinkItem {
 
 const LINKS: LinkItem[] = [
   {
-    id: "portfolio",
-    title: "Portfolio & Engineering Works",
-    subtitle: "Explore interactive portfolio & system architectures",
-    url: "https://github.com/zul1996",
+    id: "website",
+    title: "Official Website & Portfolio",
+    subtitle: "Interactive 3D isometric showcase & enterprise architecture",
+    url: "https://portofolio-theta-gilt-51.vercel.app/",
     icon: <FaGlobe className="text-lg text-indigo-400" />,
     iconBg: "bg-indigo-500/10 border-indigo-500/20",
-    badge: "Featured",
+    badge: "Official",
     highlight: true,
   },
   {
@@ -98,6 +98,7 @@ const LINKS: LinkItem[] = [
 ];
 
 const SOCIALS = [
+  { label: "Website", href: "https://portofolio-theta-gilt-51.vercel.app/", icon: <FaGlobe className="w-4 h-4" /> },
   { label: "GitHub", href: "https://github.com/zul1996", icon: <FaGithub className="w-4 h-4" /> },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/muhammad-zulkarnaen-indranto/", icon: <FaLinkedinIn className="w-4 h-4" /> },
   { label: "WhatsApp", href: "https://wa.me/6281937186854?text=Halo%20Mas%20Zul,%20salam%20kenal!", icon: <FaWhatsapp className="w-4 h-4" /> },
