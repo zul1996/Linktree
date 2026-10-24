@@ -33,6 +33,8 @@ interface LinkItem {
   highlight?: boolean;
 }
 
+const TECH_STACK = ["Spring Boot 3", "Kotlin", "Kafka & Redis", "Kubernetes RKE"];
+
 const LINKS: LinkItem[] = [
   {
     id: "website",
@@ -41,7 +43,7 @@ const LINKS: LinkItem[] = [
     url: "https://portofolio-theta-gilt-51.vercel.app/",
     icon: <FaGlobe className="text-lg text-indigo-400" />,
     iconBg: "bg-indigo-500/10 border-indigo-500/20",
-    badge: "Official",
+    badge: "Live Website",
     highlight: true,
   },
   {
@@ -197,22 +199,37 @@ export default function Home() {
             />
           </div>
 
-          <p className="mt-1 text-sm font-medium text-indigo-400 tracking-wide uppercase text-xs">
-            Backend Developer & Systems Engineer
+          <p className="mt-1.5 text-xs sm:text-sm font-semibold text-indigo-400 tracking-wide uppercase">
+            Backend Developer & IT Infrastructure Specialist
           </p>
 
           <p className="mt-2.5 max-w-sm text-xs sm:text-sm text-zinc-400 leading-relaxed">
-            Building resilient enterprise backends, national BUMN microservices & core financing systems.
+            Engineering enterprise-grade core financing systems & national-scale BUMN architectures using Spring Boot 3, Kotlin, Kafka event pipelines, and cloud container infrastructure.
           </p>
+
+          {/* Tech tags */}
+          <div className="mt-3 flex flex-wrap items-center justify-center gap-1.5 max-w-md">
+            {TECH_STACK.map((tech) => (
+              <span
+                key={tech}
+                className="px-2 py-0.5 rounded text-[11px] font-mono font-medium bg-zinc-900 border border-zinc-800 text-zinc-300"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
 
           <div className="mt-3.5 flex flex-wrap items-center justify-center gap-2 text-xs">
             <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-zinc-900/90 border border-zinc-800 text-zinc-400">
               <FaLocationDot className="text-[11px] text-zinc-500" />
-              Sidoarjo, Indonesia
+              Sidoarjo, Indonesia (UTC+07)
+            </span>
+            <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-zinc-900/90 border border-zinc-800 text-zinc-400">
+              4+ Yrs Enterprise Exp
             </span>
             <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-950/40 border border-emerald-800/40 text-emerald-300 font-medium">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              Open to Work & Architecture
+              Available for Architecture & Projects
             </span>
           </div>
         </section>
