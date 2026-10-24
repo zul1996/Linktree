@@ -59,7 +59,7 @@ const LINKS: LinkItem[] = [
   {
     id: "whatsapp",
     title: "WhatsApp",
-    subtitle: "+62 819-3718-6854",
+    subtitle: "Chat langsung untuk diskusi & kolaborasi",
     url: "https://wa.me/6281937186854?text=Halo%20Mas%20Zul,%20salam%20kenal!",
     icon: <FaWhatsapp className="text-lg text-emerald-400" />,
     iconBg: "bg-emerald-500/10 border-emerald-500/20",
