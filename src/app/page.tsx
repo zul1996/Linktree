@@ -39,8 +39,8 @@ const LINKS: LinkItem[] = [
   {
     id: "website",
     title: "Website Portofolio",
-    subtitle: "portofolio-theta-gilt-51.vercel.app",
-    url: "https://portofolio-theta-gilt-51.vercel.app/",
+    subtitle: "www.mzoel.my.id",
+    url: "https://www.mzoel.my.id/",
     icon: <FaGlobe className="text-lg text-indigo-400" />,
     iconBg: "bg-indigo-500/10 border-indigo-500/20",
     badge: "Website",
@@ -100,7 +100,7 @@ const LINKS: LinkItem[] = [
 ];
 
 const SOCIALS = [
-  { label: "Website", href: "https://portofolio-theta-gilt-51.vercel.app/", icon: <FaGlobe className="w-4 h-4" /> },
+  { label: "Website", href: "https://www.mzoel.my.id/", icon: <FaGlobe className="w-4 h-4" /> },
   { label: "GitHub", href: "https://github.com/zul1996", icon: <FaGithub className="w-4 h-4" /> },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/muhammad-zulkarnaen-indranto/", icon: <FaLinkedinIn className="w-4 h-4" /> },
   { label: "WhatsApp", href: "https://wa.me/6281937186854?text=Halo%20Mas%20Zul,%20salam%20kenal!", icon: <FaWhatsapp className="w-4 h-4" /> },
